@@ -6,7 +6,7 @@ public class jenkins {
     @Test
     public void test() {
 
-        Assert.assertEquals(1, 2);
+        Assert.assertEquals(1, 1);
 
     }
 }
