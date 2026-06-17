@@ -21,7 +21,7 @@ public class jenkins {
         String title = driver.getTitle();
         System.out.println("Page Title: " + title);
 
-        Assert.assertTrue(title.contains("Google"));
+        Assert.assertTrue(title.contains("koogle"));
 
         driver.quit();
     }
