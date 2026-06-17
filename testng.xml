@@ -5,8 +5,9 @@
     <test name="Test">
 
         <classes>
+<!--            hgfwfw-->
 
-            <class name="TestDemo"/>
+            <class name="jenkins"/>
 
         </classes>
 
