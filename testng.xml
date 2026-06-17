@@ -1,21 +1,9 @@
-import org.openqa.selenium.WebDriver;import org.openqa.selenium.chrome.ChromeDriver;
-        import org.testng.Assert;
-        import org.testng.annotations.Test;
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-        public class LoginTest {
-
-        @Test
-        public void testLogin() {
-
-        WebDriver driver = new ChromeDriver();
-
-        driver.get("https://google.com");
-
-        System.out.println(driver.getTitle());
-
-        // Force failure for demo
-        Assert.assertEquals(driver.getTitle(), "Facebook");
-
-        driver.quit();
-        }
-        }
+<suite name="Suite">
+    <test name="Test">
+        <classes>
+            <class name="jenkins"/>
+        </classes>
+    </test>
+</suite>
