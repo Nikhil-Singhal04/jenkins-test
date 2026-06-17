@@ -1,16 +1,21 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+import org.openqa.selenium.WebDriver;import org.openqa.selenium.chrome.ChromeDriver;
+        import org.testng.Assert;
+        import org.testng.annotations.Test;
 
-<suite name="Suite">
+        public class LoginTest {
 
-    <test name="Test">
+        @Test
+        public void testLogin() {
 
-        <classes>
-<!--            hgfwfw-->
+        WebDriver driver = new ChromeDriver();
 
-            <class name="jenkins"/>
+        driver.get("https://google.com");
 
-        </classes>
+        System.out.println(driver.getTitle());
 
-    </test>
+        // Force failure for demo
+        Assert.assertEquals(driver.getTitle(), "Facebook");
 
-</suite>
+        driver.quit();
+        }
+        }
