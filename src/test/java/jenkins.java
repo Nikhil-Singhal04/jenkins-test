@@ -15,7 +15,7 @@ public class jenkins {
         System.out.println(driver.getTitle());
 
         // Force failure for demo
-        Assert.assertEquals(driver.getTitle(), "Facebook");
+        Assert.assertEquals(driver.getTitle(), "Google");
 
         driver.quit();
     }
